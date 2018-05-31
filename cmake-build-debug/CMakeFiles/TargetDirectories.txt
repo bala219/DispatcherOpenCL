@@ -1,0 +1,3 @@
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles/openCLDispatcher.dir
