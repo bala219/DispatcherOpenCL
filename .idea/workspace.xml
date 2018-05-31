@@ -12,13 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1de32ac7-35e5-4891-8791-cbe92fa9e716" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/include/BitonicSort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ImportKernelSource.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kernels/bitonicSort.cl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/headers.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/headers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/runtime_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/runtime_api.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/BitonicSort.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/BitonicSort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernels/bitonicSort.cl" beforeDir="false" afterPath="$PROJECT_DIR$/kernels/bitonicSort.cl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,20 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="165">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="e#42#74#0" expanded="true" />
               </folding>
@@ -55,8 +42,8 @@
       <file leaf-file-name="BitonicSort.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/BitonicSort.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="315">
+              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
               <folding>
                 <element signature="e#53#69#0" expanded="true" />
               </folding>
@@ -64,24 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bitonicSort.cl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bitonicSort.cl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kernels/bitonicSort.cl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runtime_api.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/runtime_api.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="44" selection-end-line="47" selection-end-column="1" />
-              <folding>
-                <element signature="e#157#177#0" expanded="true" />
-                <element signature="e#209#221#0" expanded="true" />
-              </folding>
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -99,8 +73,8 @@
         <option value="$PROJECT_DIR$/include/import_kernel_source.h" />
         <option value="$PROJECT_DIR$/include/runtime_api.h" />
         <option value="$PROJECT_DIR$/include/BitonicSort.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/kernels/bitonicSort.cl" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -113,7 +87,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="47" />
     <option name="y" value="-4" />
     <option name="width" value="1319" />
@@ -135,6 +109,11 @@
               <item name="openCLDispatcher" type="b2602c69:ProjectViewProjectNode" />
               <item name="DispatcherOpenCL" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openCLDispatcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DispatcherOpenCL" type="462c0819:PsiDirectoryNode" />
+              <item name="kernels" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,20 +169,20 @@
       <workItem from="1527705586053" duration="7467000" />
       <workItem from="1527721784500" duration="17349000" />
       <workItem from="1527750793363" duration="241000" />
-      <workItem from="1527756148636" duration="2163000" />
+      <workItem from="1527756148636" duration="4351000" />
+      <workItem from="1527766261263" duration="7321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27220000" />
+    <option name="totallyTimeSpent" value="36729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="-4" width="1319" height="772" extended-state="7" />
-    <editor active="true" />
+    <frame x="46" y="-11" width="1321" height="780" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20166793" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20166793" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32930514" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3298193" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32930514" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -252,6 +231,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kernels/bitonicSort.cl">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ImportKernelSource.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/runtime_api.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="44" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="e#158#178#0" expanded="true" />
+            <element signature="e#209#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#42#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/BitonicSort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#53#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernels/bitonicSort.cl">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
@@ -262,7 +293,7 @@
         <state relative-caret-position="480">
           <caret line="32" column="44" selection-end-line="47" selection-end-column="1" />
           <folding>
-            <element signature="e#157#177#0" expanded="true" />
+            <element signature="e#158#178#0" expanded="true" />
             <element signature="e#209#221#0" expanded="true" />
           </folding>
         </state>
@@ -310,7 +341,7 @@
         <state relative-caret-position="480">
           <caret line="32" column="44" selection-end-line="47" selection-end-column="1" />
           <folding>
-            <element signature="e#157#177#0" expanded="true" />
+            <element signature="e#158#178#0" expanded="true" />
             <element signature="e#209#221#0" expanded="true" />
           </folding>
         </state>
@@ -400,13 +431,6 @@
     <entry file="file://$PROJECT_DIR$/include/Environment.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/ImportKernelSource.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/headers.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-258">
@@ -423,29 +447,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/runtime_api.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="44" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="575">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding>
-            <element signature="e#157#177#0" expanded="true" />
+            <element signature="e#158#178#0" expanded="true" />
             <element signature="e#209#221#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/include/ImportKernelSource.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#42#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/BitonicSort.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="315">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding>
             <element signature="e#53#69#0" expanded="true" />
           </folding>
@@ -454,8 +475,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kernels/bitonicSort.cl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#42#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

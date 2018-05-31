@@ -27,7 +27,7 @@ void bitonicSort(cl_device_id _DEVICE, int _elements[], size_t _element_size) {
     print_data("a", _DEVICE, _element_size);
 
     //Add kernels to the respective devices
-    string kernel_name = "_kernel_bitonic_sort";
+    string kernel_name = "_GPU_kernel_bitonic_sort";
     string kernel_src = readKernelFile("../kernels/bitonicSort.cl", "pass_arg");
 
     add_kernel(kernel_name, _DEVICE, kernel_src);
