@@ -6,6 +6,9 @@
 #define OPENCLDISPATCHER_LOGICAL_H
 
 #endif //OPENCLDISPATCHER_LOGICAL_H
+
+#pragma once
+
 #include <cstring>
 #include "../Environment.h";
 #include "../globals.h";

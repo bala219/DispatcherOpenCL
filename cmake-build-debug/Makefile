@@ -123,6 +123,60 @@ openCLDispatcher/fast:
 	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/build
 .PHONY : openCLDispatcher/fast
 
+include/primitives/source/Aggregation.o: include/primitives/source/Aggregation.cpp.o
+
+.PHONY : include/primitives/source/Aggregation.o
+
+# target to build an object file
+include/primitives/source/Aggregation.cpp.o:
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o
+.PHONY : include/primitives/source/Aggregation.cpp.o
+
+include/primitives/source/Aggregation.i: include/primitives/source/Aggregation.cpp.i
+
+.PHONY : include/primitives/source/Aggregation.i
+
+# target to preprocess a source file
+include/primitives/source/Aggregation.cpp.i:
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.i
+.PHONY : include/primitives/source/Aggregation.cpp.i
+
+include/primitives/source/Aggregation.s: include/primitives/source/Aggregation.cpp.s
+
+.PHONY : include/primitives/source/Aggregation.s
+
+# target to generate assembly for a file
+include/primitives/source/Aggregation.cpp.s:
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.s
+.PHONY : include/primitives/source/Aggregation.cpp.s
+
+include/primitives/source/BitonicSorting.o: include/primitives/source/BitonicSorting.cpp.o
+
+.PHONY : include/primitives/source/BitonicSorting.o
+
+# target to build an object file
+include/primitives/source/BitonicSorting.cpp.o:
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o
+.PHONY : include/primitives/source/BitonicSorting.cpp.o
+
+include/primitives/source/BitonicSorting.i: include/primitives/source/BitonicSorting.cpp.i
+
+.PHONY : include/primitives/source/BitonicSorting.i
+
+# target to preprocess a source file
+include/primitives/source/BitonicSorting.cpp.i:
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.i
+.PHONY : include/primitives/source/BitonicSorting.cpp.i
+
+include/primitives/source/BitonicSorting.s: include/primitives/source/BitonicSorting.cpp.s
+
+.PHONY : include/primitives/source/BitonicSorting.s
+
+# target to generate assembly for a file
+include/primitives/source/BitonicSorting.cpp.s:
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.s
+.PHONY : include/primitives/source/BitonicSorting.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... openCLDispatcher"
+	@echo "... include/primitives/source/Aggregation.o"
+	@echo "... include/primitives/source/Aggregation.i"
+	@echo "... include/primitives/source/Aggregation.s"
+	@echo "... include/primitives/source/BitonicSorting.o"
+	@echo "... include/primitives/source/BitonicSorting.i"
+	@echo "... include/primitives/source/BitonicSorting.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

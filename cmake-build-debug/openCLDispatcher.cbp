@@ -87,9 +87,6 @@
 		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/Query6.h">
 			<Option target="openCLDispatcher"/>
 		</Unit>
-		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/BitonicSort.h">
-			<Option target="openCLDispatcher"/>
-		</Unit>
 		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/DAG_query.h">
 			<Option target="openCLDispatcher"/>
 		</Unit>
@@ -124,6 +121,21 @@
 			<Option target="openCLDispatcher"/>
 		</Unit>
 		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_generator/selection_generator.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/BitonicSorting.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Merging.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/Aggregation.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/BitonicSorting.cpp">
 			<Option target="openCLDispatcher"/>
 		</Unit>
 		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/runtime_api.h">

@@ -3,31 +3,24 @@
 //
 
 #include "include/Environment.h"
-#include "include/BitonicSort.h"
+#include "include/primitives/header/BitonicSorting.h"
+#include "include/primitives/header/Aggregation.h"
 
 //cl_mem result;
 
 //void test_addition();
-void env_setup();
+void call_BitonicSort(cl_device_id _DEVICE, cl_event _event);
+
+void call_Merge(cl_device_id _DEVICE);
+
+void call_Aggregation(cl_device_id _DEVICE);
 
 int main(int argc, char *argv[]) {
 
     //cross_device();
     //test_addition();
-    env_setup();
-}
-
-void env_setup() {
-
     setup_environment();
     print_environment();
-
-    // Array of elements
-    int _m_size = 16;
-    int _m_arr[_m_size];
-    for (int i = 0; i < _m_size; i++) {
-        _m_arr[i] = rand() % _m_size;
-    }
 
     // Get Device ID
     cl_device_id CPU, GPU;
@@ -35,10 +28,55 @@ void env_setup() {
     GPU = device[0][0];
     //CPU = device[0][1];
 
-    // Call the Bitonic Sorting
-    bitonicSort(GPU, _m_arr, _m_size);
+    // Initialize the events required
+    evt = new cl_event[3];
 
+    call_BitonicSort(GPU, evt[0]);
+    call_Merge(GPU);
+    call_Aggregation(GPU);
+
+    // Execution Time
+    print_execution_time(evt[0]);
 }
+
+void call_BitonicSort(cl_device_id _DEVICE, cl_event _event) {
+
+    // Array of elements
+    int _m_size = pow(2, 4);
+    int _m_arr[_m_size];
+    for (int i = 0; i < _m_size; i++) {
+        _m_arr[i] = rand() % _m_size;
+    }
+
+    // Call the Bitonic Sorting
+    /*BitonicSorting().*/BitonicSort(_DEVICE, _event, _m_arr, _m_size);
+}
+
+void call_Merge(cl_device_id _DEVICE) {
+
+    //
+
+    // Call the Merge
+}
+
+void call_Aggregation(cl_device_id _DEVICE) {
+
+    // Array of elements
+    /*int _m_size = pow(2, 4);
+    int _m_arr[_m_size];
+    for (int i = 0; i < _m_size; i++) {
+        _m_arr[i] = rand() % _m_size;
+    }*/
+    int _m_size = 16;
+    int _m_arr[_m_size] = {1, 2, 3, 3, 6, 6, 7, 9, 9, 10, 10, 11, 11, 12, 13, 15};
+    int _m_no_distinct_value = 11;
+
+    // Call the Aggregation
+    Aggregation().Aggregate(_DEVICE, _m_arr, _m_size, _m_no_distinct_value);
+}
+
+
+
 
 /*void test_addition(){
 

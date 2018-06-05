@@ -7,6 +7,8 @@
 
 #endif //OPENCLDISPATCHER_SELECTION_GENERATOR_H
 
+#pragma once
+
 #include "../headers.h"
 #include "../globals.h"
 #include "../kernel_class/selection.h"

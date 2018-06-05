@@ -9,15 +9,17 @@
 
 #pragma once
 
+//#include <boost/chrono.hpp>
 #include <iostream>
 #include <fstream>
-//#include <vector>
 #include <bitset>
-//#include <boost/chrono.hpp>
 #include <iomanip>
 #include <map>
 #include <vector>
 #include <list>
+#include <cmath>
+#include "cstring"
+#include "sstream"
 
 #ifdef __APPLE__
 #include <OpenCL/opencl.h>

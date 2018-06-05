@@ -9,16 +9,13 @@
 
 #pragma once
 
-#include <cstring>
-#include "headers.h"
 #include "globals.h"
 
-
-cl_kernel build_kernel(const char* source, const char* kernel_name,cl_device_id device){
+cl_kernel build_kernel(const char* source, const char* kernel_name,cl_device_id device, string _command_arg) {
 
     cl_context context = queue[device].context;
     cl_program program = clCreateProgramWithSource(context, 1, &source, NULL, NULL);
-    cl_int err = clBuildProgram(program, 1, &device, NULL, NULL, NULL);
+    cl_int err = clBuildProgram(program, 1, &device, _command_arg.c_str(), NULL, NULL);
 
     if (err != CL_SUCCESS) {
         size_t LogSize;
@@ -38,7 +35,7 @@ cl_kernel build_kernel(const char* source, const char* kernel_name,cl_device_id 
     return kernel;
 }
 
-void add_kernel(string kernel_name, cl_device_id device, string kernel_src){
+void add_kernel(string kernel_name, cl_device_id device, string kernel_src, string _command_arg) {
 
     //Set kernel information
     char *src = new char[kernel_src.length() + 1];
@@ -47,6 +44,6 @@ void add_kernel(string kernel_name, cl_device_id device, string kernel_src){
     char *name = new char[kernel_name.length() + 1];
     strcpy(name, kernel_name.c_str());
 
-    cl_kernel kernel = build_kernel(src, name, device);
+    cl_kernel kernel = build_kernel(src, name, device, _command_arg);
     kernel_dictionary.insert(make_pair(make_pair(kernel_name,device),kernel));
 }

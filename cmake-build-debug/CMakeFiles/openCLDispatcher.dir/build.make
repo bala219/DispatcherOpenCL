@@ -81,18 +81,70 @@ CMakeFiles/openCLDispatcher.dir/main.cpp.o.provides: CMakeFiles/openCLDispatcher
 CMakeFiles/openCLDispatcher.dir/main.cpp.o.provides.build: CMakeFiles/openCLDispatcher.dir/main.cpp.o
 
 
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o: CMakeFiles/openCLDispatcher.dir/flags.make
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o: ../include/primitives/source/Aggregation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o -c /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/Aggregation.cpp
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/Aggregation.cpp > CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.i
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/Aggregation.cpp -o CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.s
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.requires:
+
+.PHONY : CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.requires
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.provides: CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.provides.build
+.PHONY : CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.provides
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.provides.build: CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o
+
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o: CMakeFiles/openCLDispatcher.dir/flags.make
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o: ../include/primitives/source/BitonicSorting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o -c /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/BitonicSorting.cpp
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/BitonicSorting.cpp > CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.i
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/BitonicSorting.cpp -o CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.s
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.requires:
+
+.PHONY : CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.requires
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.provides: CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.requires
+	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.provides.build
+.PHONY : CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.provides
+
+CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.provides.build: CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o
+
+
 # Object files for target openCLDispatcher
 openCLDispatcher_OBJECTS = \
-"CMakeFiles/openCLDispatcher.dir/main.cpp.o"
+"CMakeFiles/openCLDispatcher.dir/main.cpp.o" \
+"CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o" \
+"CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o"
 
 # External object files for target openCLDispatcher
 openCLDispatcher_EXTERNAL_OBJECTS =
 
 openCLDispatcher: CMakeFiles/openCLDispatcher.dir/main.cpp.o
+openCLDispatcher: CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o
+openCLDispatcher: CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o
 openCLDispatcher: CMakeFiles/openCLDispatcher.dir/build.make
 openCLDispatcher: /usr/lib/libOpenCL.so
 openCLDispatcher: CMakeFiles/openCLDispatcher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable openCLDispatcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable openCLDispatcher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openCLDispatcher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -101,6 +153,8 @@ CMakeFiles/openCLDispatcher.dir/build: openCLDispatcher
 .PHONY : CMakeFiles/openCLDispatcher.dir/build
 
 CMakeFiles/openCLDispatcher.dir/requires: CMakeFiles/openCLDispatcher.dir/main.cpp.o.requires
+CMakeFiles/openCLDispatcher.dir/requires: CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o.requires
+CMakeFiles/openCLDispatcher.dir/requires: CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o.requires
 
 .PHONY : CMakeFiles/openCLDispatcher.dir/requires
 

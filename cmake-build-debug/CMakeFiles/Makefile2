@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOp
 CMakeFiles/openCLDispatcher.dir/all:
 	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/depend
 	$(MAKE) -f CMakeFiles/openCLDispatcher.dir/build.make CMakeFiles/openCLDispatcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target openCLDispatcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target openCLDispatcher"
 .PHONY : CMakeFiles/openCLDispatcher.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/openCLDispatcher.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/openCLDispatcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/openCLDispatcher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/openCLDispatcher.dir/rule

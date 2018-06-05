@@ -2,6 +2,8 @@
 // Created by gurumurt on 4/11/18.
 //
 
+#pragma once
+
 #include "../base_kernel.h"
 #include "../headers.h"
 #include "../globals.h"

@@ -7,7 +7,8 @@
 
 #endif //OPENCLDISPATCHER_DAG_QUERY_H
 
-#include "headers.h"
+#pragma once
+
 #include "globals.h"
 
 class node {

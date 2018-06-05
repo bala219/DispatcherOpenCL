@@ -8,7 +8,7 @@
 #endif //OPENCLTEST_DATA_API_H
 
 #pragma once
-#include "headers.h"
+
 #include "globals.h"
 
 template <typename T>
@@ -49,7 +49,7 @@ void print_data(string name, cl_device_id device, size_t global_size,bool flag_b
     if(flag_bits){
         for(int i=0;i<2;i++){
             std::bitset<32> x(result[i]);
-            std::cout << x<<endl;
+            std::cout << x <<endl;
         }
     }
 

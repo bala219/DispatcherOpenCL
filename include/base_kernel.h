@@ -7,7 +7,8 @@
 
 #endif //OPENCLDISPATCHER_BASE_KERNEL_H
 
-#include "headers.h"
+#pragma once
+
 #include "globals.h"
 
 class base_kernel{

@@ -7,6 +7,8 @@
 
 #endif //OPENCLDISPATCHER_SELECTION_H
 
+#pragma once
+
 #include <cstring>
 #include "../Environment.h";
 #include "../globals.h";

@@ -9,11 +9,11 @@
 
 #pragma once
 
-#include "headers.h"
 #include "globals.h"
 
 template<typename T>
-void execute(cl_device_id device, string kernel_name, vector<string> args, size_t global_size, vector<T> param) {
+void execute(cl_device_id device, string kernel_name, cl_event _event, vector<string> args, vector<T> param, size_t global_size = NULL,
+             size_t local_size = NULL) {
 
     //Set the kernel arguments
     cl_kernel kernel = kernel_dictionary.find(make_pair(kernel_name, device))->second;
@@ -42,7 +42,10 @@ void execute(cl_device_id device, string kernel_name, vector<string> args, size_
     }
 
     //Execute kernel
-    err = clEnqueueNDRangeKernel(queue[device].queue, kernel, 1, NULL, &global_size, NULL,
-                                 0, NULL, NULL);
+    err = clEnqueueNDRangeKernel(queue[device].queue, kernel, 1, NULL, &global_size, &local_size,
+                                 0, NULL, &event);
+
+    clWaitForEvents(1, &event);
+
     clFinish(queue[device].queue);
 }

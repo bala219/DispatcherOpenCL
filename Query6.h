@@ -11,10 +11,14 @@
 
 #include <fstream>
 #include <cstring>
+#include <climits>
 #include "include/headers.h"
 //#include "include/kernel_store.h"
 #include "include/kernel_generator/selection.h"
 #include "include/kernel_class/logical.h"
+#include "include/data_api.h"
+#include "include/kernel_api.h"
+#include "include/runtime_api.h"
 
 static int byteArrayToInt(char* b) {
     return (b[3] & 0xFF) | (b[2] & 0xFF) << 8 | (b[1] & 0xFF) << 16

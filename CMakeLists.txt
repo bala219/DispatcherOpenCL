@@ -1,7 +1,7 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5) #cmake_minimum_required(VERSION 3.10)
 PROJECT(openCLDispatcher)
 
-SET(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_CXX_STANDARD 11) #set(CMAKE_CXX_STANDARD 98)
 
 #set(OpenCL_INCLUDE_DIR /opt/intel/OpenCL)
 
@@ -9,22 +9,29 @@ FIND_PACKAGE(OpenCL)
 
 ADD_EXECUTABLE(openCLDispatcher
 
+        main.cpp
+        Query6.h
+
+        include/kernel_class/logical.h
+        include/kernel_class/selection.h
+        include/kernel_generator/selection.h
+        include/kernel_generator/selection_generator.h
+
         include/headers.h
         include/globals.h
         include/Environment.h
-        include/BitonicSort.h
-
-        main.cpp
         include/data_api.h
         include/kernel_api.h
         include/runtime_api.h
-        Query6.h
-        include/kernel_generator/selection.h
         include/base_kernel.h
-        include/kernel_class/selection.h
-        include/kernel_generator/selection_generator.h
         include/DAG_query.h
-        include/kernel_class/logical.h include/ImportKernelSource.h)
+        include/ImportKernelSource.h
+        include/primitives/header/BitonicSorting.h
+
+        #Merge.cpp
+        include/primitives/header/Merging.h
+        include/primitives/source/Aggregation.cpp
+        include/primitives/header/Aggregation.h include/primitives/source/BitonicSorting.cpp)
 
 #INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 INCLUDE_DIRECTORIES( ${OpenCL_INCLUDE_DIR} )
@@ -42,11 +49,20 @@ TARGET_LINK_LIBRARIES( openCLDispatcher LINK_PUBLIC ${OpenCL_LIBRARIES})
 
 #add_executable(openCLDispatcher
 
-#include/headers.h
- #               include/globals.h
-  #              include/Environment.h
-#
- #               main.cpp include/data_api.h include/kernel_api.h include/runtime_api.h Query6.h include/kernel_generator/selection.h include/base_kernel.h include/kernel_class/selection.h include/kernel_generator/selection_generator.h include/DAG_query.h include/kernel_class/logical.h)
+#               main.cpp
+#               Query6.h
+#               include/headers.h
+#               include/globals.h
+#               include/Environment.h
+#               include/data_api.h
+#               include/kernel_api.h
+#               include/runtime_api.h
+#               include/DAG_query.h
+#               include/base_kernel.h
+#               include/kernel_generator/selection.h
+#               include/kernel_class/selection.h
+#               include/kernel_generator/selection_generator.h
+#               include/kernel_class/logical.h)
 
 #FIND_PACKAGE(Boost 1.58 COMPONENTS system chrono)
 #FIND_PACKAGE(OpenCL)

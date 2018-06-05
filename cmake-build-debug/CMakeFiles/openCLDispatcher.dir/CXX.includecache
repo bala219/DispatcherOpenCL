@@ -6,37 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/BitonicSort.h
-cmath
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/cmath
-CL/cl.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/CL/cl.h
-data_api.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
-kernel_api.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_api.h
-runtime_api.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/runtime_api.h
-ImportKernelSource.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/ImportKernelSource.h
-
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/Environment.h
-headers.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
 globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/ImportKernelSource.h
-sstream
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/sstream
-iostream
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/iostream
-headers.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
+globals.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
-headers.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
 globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 
@@ -59,28 +37,50 @@ vector
 -
 list
 -
+cmath
+-
+cstring
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/cstring
+sstream
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/sstream
 OpenCL/opencl.h
 -
 CL/cl.h
 -
 
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_api.h
-cstring
--
-headers.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
 globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation.h
+../../data_api.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
+
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/BitonicSorting.h
+../../data_api.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
+../../kernel_api.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_api.h
+../../runtime_api.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/runtime_api.h
-headers.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
+../../ImportKernelSource.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/ImportKernelSource.h
+
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/Aggregation.cpp
+../header/Aggregation.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation.h
+
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/source/BitonicSorting.cpp
+
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/runtime_api.h
 globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/main.cpp
 include/Environment.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/Environment.h
-include/BitonicSort.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/BitonicSort.h
+include/primitives/header/BitonicSorting.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/BitonicSorting.h
+include/primitives/header/Aggregation.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation.h
 

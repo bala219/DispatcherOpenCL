@@ -5,14 +5,14 @@
 #ifndef OPENCLDISPATCHER_IMPORT_KERNEL_SOURCE_H
 #define OPENCLDISPATCHER_IMPORT_KERNEL_SOURCE_H
 
-#include "sstream"
-#include "iostream"
-#include "headers.h"
+#pragma once
 
-string readKernelFile(string _path, string _value) {
+#include "globals.h"
+
+string readKernelFile(string _path) {
 
     //cout << "PATH :: " << _path << endl;
-    string _m_output = "";
+    string _m_output;
     ifstream _m_myfile(_path);
 
     if(!_m_myfile) { // failed to open file
