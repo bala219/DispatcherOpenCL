@@ -43,9 +43,9 @@ void execute(cl_device_id device, string kernel_name, cl_event _event, vector<st
 
     //Execute kernel
     err = clEnqueueNDRangeKernel(queue[device].queue, kernel, 1, NULL, &global_size, &local_size,
-                                 0, NULL, &event);
+                                 0, NULL, &_event);
 
-    clWaitForEvents(1, &event);
+    clWaitForEvents(1, &_event);
 
     clFinish(queue[device].queue);
 }

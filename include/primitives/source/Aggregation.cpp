@@ -2,7 +2,7 @@
 // Created by tompi on 6/3/18.
 //
 
-#include "../header/Aggregation.h"
+/*#include "../header/Aggregation.h"
 
 void Aggregation::Aggregate(cl_device_id _DEVICE, int _sorted_elements[], uint _element_size, uint _no_distinct_val) {
 
@@ -16,4 +16,4 @@ void Aggregation::Aggregate(cl_device_id _DEVICE, int _sorted_elements[], uint _
     lookup_data_buffer();
 
     print_data("sorted_elements", _DEVICE, _element_size);
-}
+}/**/

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/openCLDispatcher.dir/main.cpp.o CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o  -o openCLDispatcher /usr/lib/libOpenCL.so 
+/usr/bin/c++  -g   CMakeFiles/openCLDispatcher.dir/Main.cpp.o  -o openCLDispatcher /usr/lib/libOpenCL.so 

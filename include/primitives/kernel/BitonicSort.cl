@@ -14,7 +14,6 @@ __kernel void _kernel_bitonic_sort(__global int* _elements, const uint _stages) 
 		for (uint _passOfStage = _stage; _passOfStage > 0; _passOfStage--) {
 
 			uint _targetElements = 1 << (_passOfStage-1);
-			//uint g = 1 << _passOfStage;
 
 			uint _index1 = (_mId >> (_passOfStage-1));
 			_index1 = _index1 << _passOfStage;
@@ -34,7 +33,6 @@ __kernel void _kernel_bitonic_sort(__global int* _elements, const uint _stages) 
 
 			/*if(_index2 == ARR_SIZE-1) {
 	            printf("\n---------------------------------------------------------------------");
-
 			}
 			if(_passOfStage == 1) {
 			    printf("\n---------------------------------------------------------------------");

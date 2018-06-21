@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/openCLDispatcher.dir/main.cpp.o"
-  "CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o"
-  "CMakeFiles/openCLDispatcher.dir/include/primitives/source/BitonicSorting.cpp.o"
+  "CMakeFiles/openCLDispatcher.dir/Main.cpp.o"
   "openCLDispatcher.pdb"
   "openCLDispatcher"
 )

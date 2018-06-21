@@ -5,8 +5,6 @@
 #ifndef OPENCLTEST_ENVIRONMENT_H
 #define OPENCLTEST_ENVIRONMENT_H
 
-#endif //OPENCLTEST_ENVIRONMENT_H
-
 #pragma once
 
 #include "globals.h"
@@ -69,16 +67,18 @@ void print_environment(){
 }
 
 void print_execution_time(cl_event _event) {
+
     cl_ulong time_start;
     cl_ulong time_end;
-
 
     //clGetEventProfilingInfo(_event, cpiS, sizeof(time_start), &time_start, NULL);
     //clGetEventProfilingInfo(_event, cpiE, sizeof(time_end), &time_end, NULL);
 
-    clGetEventProfilingInfo(event, cpiS, sizeof(time_start), &time_start, NULL);
-    clGetEventProfilingInfo(event, cpiE, sizeof(time_end), &time_end, NULL);
+    clGetEventProfilingInfo(_event, cpiS, sizeof(time_start), &time_start, NULL);
+    clGetEventProfilingInfo(_event, cpiE, sizeof(time_end), &time_end, NULL);
 
     double nanoSeconds = time_end-time_start;
     printf("\nOpenCl Execution time is: %0.3f milliseconds \n",nanoSeconds / 1000000.0);
 }
+
+#endif //OPENCLTEST_ENVIRONMENT_H

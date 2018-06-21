@@ -12,49 +12,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1de32ac7-35e5-4891-8791-cbe92fa9e716" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/include/primitives/header/Aggregation.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/header/BitonicSorting.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/header/Merging.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/kernel/Merge.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/source/Aggregation.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/primitives/source/Merging.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kernels/Test.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/primitives/header/Aggregation1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/primitives/kernel/Aggregate1.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/primitives/kernel/BitMasked.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/primitives/kernel/IndexValue.cl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query6.h" beforeDir="false" afterPath="$PROJECT_DIR$/Query6.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/include/primitives/source/Aggregation.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/openCLDispatcher.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/openCLDispatcher" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/openCLDispatcher.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/openCLDispatcher.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/BitonicSort.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/DAG_query.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/DAG_query.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Environment.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Environment.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ImportKernelSource.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ImportKernelSource.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/base_kernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/base_kernel.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/data_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/data_api.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/globals.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/globals.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/headers.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/headers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/kernel_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/kernel_api.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/kernel_class/logical.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/kernel_class/logical.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/kernel_class/selection.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/kernel_class/selection.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/kernel_generator/selection.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/kernel_generator/selection.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/kernel_generator/selection_generator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/kernel_generator/selection_generator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/header/Aggregation.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/header/Aggregation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/header/BitonicSorting.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/header/BitonicSorting.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/header/Merging.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/header/Merging.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/kernel/Merge.cl" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/kernel/Merge.cl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/source/Aggregation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/source/Aggregation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/runtime_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/runtime_api.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kernels/bitonicSort.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,37 +65,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#42#74#0" expanded="true" />
+                <element signature="e#62#94#0" expanded="true" />
+                <element signature="e#202#253#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Aggregation.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/primitives/source/Aggregation.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Aggregation.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/primitives/header/Aggregation.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setup_environment</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,33 +101,42 @@
         <option value="$PROJECT_DIR$/kernels/BitonicSort.cl" />
         <option value="$PROJECT_DIR$/Merge.cpp" />
         <option value="$PROJECT_DIR$/include/Merge.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/Aggregation.h" />
         <option value="$PROJECT_DIR$/Aggregation.cpp" />
         <option value="$PROJECT_DIR$/include/primitives/source/BitonicSort.cpp" />
         <option value="$PROJECT_DIR$/include/primitives/header/BitonicSort.h" />
         <option value="$PROJECT_DIR$/Query6.h" />
-        <option value="$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp" />
-        <option value="$PROJECT_DIR$/include/headers.h" />
-        <option value="$PROJECT_DIR$/include/data_api.h" />
         <option value="$PROJECT_DIR$/include/base_kernel.h" />
         <option value="$PROJECT_DIR$/include/DAG_query.h" />
         <option value="$PROJECT_DIR$/include/ImportKernelSource.h" />
         <option value="$PROJECT_DIR$/include/kernel_api.h" />
-        <option value="$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl" />
-        <option value="$PROJECT_DIR$/include/globals.h" />
-        <option value="$PROJECT_DIR$/include/Environment.h" />
-        <option value="$PROJECT_DIR$/include/runtime_api.h" />
-        <option value="$PROJECT_DIR$/include/primitives/header/Merging.h" />
-        <option value="$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl" />
-        <option value="$PROJECT_DIR$/include/primitives/header/BitonicSorting.h" />
-        <option value="$PROJECT_DIR$/include/primitives/header/Aggregation.h" />
-        <option value="$PROJECT_DIR$/include/primitives/source/Aggregation.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/include/kernel_class/logical.h" />
         <option value="$PROJECT_DIR$/include/kernel_class/selection.h" />
         <option value="$PROJECT_DIR$/include/kernel_generator/selection.h" />
         <option value="$PROJECT_DIR$/include/kernel_generator/selection_generator.h" />
+        <option value="$PROJECT_DIR$/include/primitives/source/Aggregation.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/main.h" />
+        <option value="$PROJECT_DIR$/include/runtime_api.h" />
+        <option value="$PROJECT_DIR$/include/Environment.h" />
+        <option value="$PROJECT_DIR$/include/headers.h" />
+        <option value="$PROJECT_DIR$/Main.h" />
+        <option value="$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/Merge.cl" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl" />
+        <option value="$PROJECT_DIR$/include/data_api.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/primitives/header/BitonicSorting.h" />
+        <option value="$PROJECT_DIR$/include/primitives/header/Merging.h" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/PrefixSum.cl" />
+        <option value="$PROJECT_DIR$/include/globals.h" />
+        <option value="$PROJECT_DIR$/include/primitives/header/Aggregation.h" />
+        <option value="$PROJECT_DIR$/include/primitives/header/Aggregation1.h" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/Aggregate1.cl" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/BitMasked.cl" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl" />
+        <option value="$PROJECT_DIR$/include/primitives/kernel/IndexValue.cl" />
+        <option value="$PROJECT_DIR$/Main.cpp" />
       </list>
     </option>
   </component>
@@ -154,11 +149,12 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="47" />
-    <option name="y" value="-4" />
-    <option name="width" value="1319" />
-    <option name="height" value="772" />
+    <option name="y" value="30" />
+    <option name="width" value="1317" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -177,12 +173,6 @@
               <item name="openCLDispatcher" type="b2602c69:ProjectViewProjectNode" />
               <item name="DispatcherOpenCL" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="openCLDispatcher" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DispatcherOpenCL" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="kernel_generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="openCLDispatcher" type="b2602c69:ProjectViewProjectNode" />
@@ -227,6 +217,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/include/primitives/kernel" />
+      <recent name="$PROJECT_DIR$/include/primitives/header" />
       <recent name="$PROJECT_DIR$/kernels" />
       <recent name="$PROJECT_DIR$/include" />
     </key>
@@ -250,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.openCLDispatcher">
+  <component name="RunManager" selected="Application.Build All">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openCLDispatcher" RUN_TARGET_NAME="openCLDispatcher" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="openCLDispatcher" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openCLDispatcher" TARGET_NAME="openCLDispatcher" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openCLDispatcher" RUN_TARGET_NAME="openCLDispatcher" />
     <list>
@@ -281,24 +272,35 @@
       <workItem from="1528027953513" duration="11811000" />
       <workItem from="1528102741227" duration="704000" />
       <workItem from="1528149919736" duration="512000" />
-      <workItem from="1528192590033" duration="5102000" />
+      <workItem from="1528192590033" duration="41008000" />
+      <workItem from="1528353039258" duration="68432000" />
+      <workItem from="1528657754438" duration="9802000" />
+      <workItem from="1528745382889" duration="39350000" />
+      <workItem from="1528963671169" duration="14000" />
+      <workItem from="1529065237853" duration="31114000" />
+      <workItem from="1529327341421" duration="1205000" />
+      <workItem from="1529364250222" duration="6044000" />
+      <workItem from="1529450345350" duration="44000" />
+      <workItem from="1529450424454" duration="2258000" />
+      <workItem from="1529512457829" duration="18900000" />
+      <workItem from="1529542576794" duration="2893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78758000" />
+    <option name="totallyTimeSpent" value="294720000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="-4" width="1319" height="772" extended-state="7" />
+    <frame x="46" y="-11" width="1321" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20166793" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20166793" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.4592145" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.45783132" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32930514" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.6389728" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.66918427" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32831326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32930514" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -312,23 +314,23 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3298193" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20166793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.9244713" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.9848943" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32930514" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32930514" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32930514" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3298193" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -344,20 +346,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/ImportKernelSource.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/runtime_api.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -365,12 +353,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
-            <element signature="e#42#74#0" expanded="true" />
+            <element signature="e#62#94#0" expanded="true" />
+            <element signature="e#202#253#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -382,50 +371,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/header/BitonicSorting.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/runtime_api.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="44" selection-end-line="47" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
-            <element signature="e#42#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#42#74#0" expanded="true" />
+            <element signature="e#62#94#0" expanded="true" />
+            <element signature="e#202#253#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -472,24 +424,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
           <folding>
-            <element signature="e#42#74#0" expanded="true" />
+            <element signature="e#62#94#0" expanded="true" />
+            <element signature="e#202#253#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernels/selection.cl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernels/copy.cl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernels/add.cl">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/BitonicSorting.h" />
     <entry file="file://$PROJECT_DIR$/include/BitonicSorting.cpp" />
@@ -501,48 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/Merge.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Query6.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="225" column="69" lean-forward="true" selection-start-line="225" selection-start-column="69" selection-end-line="225" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/CL/cl.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/primitives/source/Merging.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -550,37 +452,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/header/Merging.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/header/BitonicSorting.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding>
-            <element signature="e#132#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/kernel_class/logical.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#149#167#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,9 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="e#42#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,9 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#155#173#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#186#209#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,48 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/data_api.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Environment.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/header/Aggregation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/globals.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/headers.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/ImportKernelSource.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/kernel_api.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -677,28 +501,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/primitives/source/Aggregation.cpp">
+    <entry file="file://$PROJECT_DIR$/Main.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        <state relative-caret-position="136">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Environment.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/runtime_api.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="246">
+          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/Aggregation.cl" />
+    <entry file="file://$PROJECT_DIR$/kernels/add.cl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernels/copy.cl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/CL/cl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="1015" selection-start-line="1015" selection-end-line="1015" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernels/selection.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/data_api.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Query6.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3270">
+          <caret line="225" column="69" lean-forward="true" selection-start-line="225" selection-start-column="69" selection-end-line="225" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/source/Aggregation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ImportKernelSource.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/source/BitonicSorting.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/header/BitonicSorting.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding>
-            <element signature="e#188#200#0" expanded="true" />
+            <element signature="e#132#159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/include/primitives/header/Merging.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        <state relative-caret-position="165">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/PrefixSum.cl" />
+    <entry file="file://$PROJECT_DIR$/include/globals.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/headers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/Merge.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/header/Aggregation1.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="69" column="113" selection-start-line="69" selection-start-column="113" selection-end-line="69" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/header/Aggregation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="79" selection-start-line="86" selection-start-column="79" selection-end-line="86" selection-end-column="79" />
           <folding>
-            <element signature="e#42#74#0" expanded="true" />
+            <element signature="e#131#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/Aggregate.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="171" selection-start-line="16" selection-start-column="171" selection-end-line="16" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/Aggregate1.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/BitMasked.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="140" selection-start-line="17" selection-start-column="140" selection-end-line="17" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/BitonicSort.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/primitives/kernel/IndexValue.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="137" lean-forward="true" selection-start-line="16" selection-start-column="137" selection-end-line="16" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#62#94#0" expanded="true" />
+            <element signature="e#202#253#0" expanded="true" />
           </folding>
         </state>
       </provider>

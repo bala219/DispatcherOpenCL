@@ -5,8 +5,6 @@
 #ifndef OPENCLTEST_HEADERS_H
 #define OPENCLTEST_HEADERS_H
 
-#endif //OPENCLTEST_HEADERS_H
-
 #pragma once
 
 //#include <boost/chrono.hpp>
@@ -35,3 +33,5 @@ enum RETURN_TYPE {
 };
 
 using namespace std;
+
+#endif //OPENCLTEST_HEADERS_H

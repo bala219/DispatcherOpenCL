@@ -9,7 +9,8 @@ FIND_PACKAGE(OpenCL)
 
 ADD_EXECUTABLE(openCLDispatcher
 
-        main.cpp
+        Main.h
+        Main.cpp
         Query6.h
 
         include/kernel_class/logical.h
@@ -26,12 +27,17 @@ ADD_EXECUTABLE(openCLDispatcher
         include/base_kernel.h
         include/DAG_query.h
         include/ImportKernelSource.h
-        include/primitives/header/BitonicSorting.h
 
-        #Merge.cpp
+
+        include/primitives/header/BitonicSorting.h
+        #include/primitives/source/BitonicSorting.cpp
         include/primitives/header/Merging.h
-        include/primitives/source/Aggregation.cpp
-        include/primitives/header/Aggregation.h include/primitives/source/BitonicSorting.cpp)
+        #include/primitives/header/Merging.cpp
+        include/primitives/header/Aggregation.h
+        #include/primitives/source/Aggregation.cpp
+        include/primitives/header/Aggregation1.h
+
+)
 
 #INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 INCLUDE_DIRECTORIES( ${OpenCL_INCLUDE_DIR} )
