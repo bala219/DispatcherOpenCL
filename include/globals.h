@@ -13,7 +13,7 @@ static int count;
 
 //cl_event *evt;
 
-cl_event event;
+cl_event evt;
 
 cl_int err;
 
@@ -53,8 +53,11 @@ multimap<pair<string, cl_device_id>, cl_mem> data_dictionary;
 
 map<pair<string, cl_device_id>, cl_kernel> kernel_dictionary;
 
+//
 // CONSTANSTS FOR KERNEL
-const uint ITERATOR = 4;
+//
+
+const uint ITERATOR = 8;
 
 // KERNEL NAMES
 const string KERNEL_BITONIC_SORT = "_kernel_bitonic_sort";

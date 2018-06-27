@@ -6,10 +6,11 @@ CMakeFiles/openCLDispatcher.dir/Main.cpp.o
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/Environment.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/ImportKernelSource.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
+ /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/distribution.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_api.h
- /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation1.h
+ /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregating.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/BitonicSorting.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Merging.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/runtime_api.h

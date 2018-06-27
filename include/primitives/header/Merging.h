@@ -48,7 +48,7 @@ void Merge(cl_device_id _DEVICE,int _arr_left[],int _arr_right[],int _arr_result
     size_t local_size=_size_left/4;
     size_t global_size=_size_left/4;
 
-    execute(_DEVICE, kernel_name, event, arguments, param,global_size,local_size);
+    execute(_DEVICE, kernel_name, evt, arguments, param,global_size,local_size);
 
 
     //print result array

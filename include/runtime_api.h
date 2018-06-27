@@ -12,7 +12,8 @@
 #include "globals.h"
 
 template<typename T>
-void execute(cl_device_id device, string kernel_name, cl_event _event, vector<string> args, vector<T> param, size_t global_size = NULL,
+void execute(cl_device_id device, string kernel_name, cl_event _event, vector<string> args, vector<T> param,
+             size_t global_size = NULL,
              size_t local_size = NULL) {
 
     //Set the kernel arguments
@@ -46,6 +47,20 @@ void execute(cl_device_id device, string kernel_name, cl_event _event, vector<st
                                  0, NULL, &_event);
 
     clWaitForEvents(1, &_event);
-
     clFinish(queue[device].queue);
+
+    cl_ulong time_start;
+    cl_ulong time_end;
+
+    //clGetEventProfilingInfo(_event, cpiS, sizeof(time_start), &time_start, NULL);
+    //clGetEventProfilingInfo(_event, cpiE, sizeof(time_end), &time_end, NULL);
+
+    clGetEventProfilingInfo(_event, cpiS, sizeof(time_start), &time_start, NULL);
+    clGetEventProfilingInfo(_event, cpiE, sizeof(time_end), &time_end, NULL);
+
+    double nanoSeconds = time_end-time_start;
+
+    printf("\nOpenCl Execution time is: %0.3f milliseconds \n", nanoSeconds / 1000000.0);
+    //printf("\nOpenCl Execution time is: %0.3f milliseconds start \n", time_start / 1000000.0);
+    //printf("\nOpenCl Execution time is: %0.3f milliseconds end\n", time_end / 1000000.0);
 }

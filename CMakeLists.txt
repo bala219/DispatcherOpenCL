@@ -33,11 +33,11 @@ ADD_EXECUTABLE(openCLDispatcher
         #include/primitives/source/BitonicSorting.cpp
         include/primitives/header/Merging.h
         #include/primitives/header/Merging.cpp
-        include/primitives/header/Aggregation.h
+        include/primitives/header/Aggregating.h
         #include/primitives/source/Aggregation.cpp
-        include/primitives/header/Aggregation1.h
+        include/primitives/header/Aggregation.h
 
-)
+        include/distribution.h)
 
 #INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 INCLUDE_DIRECTORIES( ${OpenCL_INCLUDE_DIR} )

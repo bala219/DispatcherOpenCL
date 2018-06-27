@@ -18,7 +18,7 @@
         void BitonicSort(cl_device_id _DEVICE, cl_event _event, int _elements[], size_t _element_size);
 };/**/
 
-void BitonicSort(cl_device_id _DEVICE, cl_event _event, int _elements[], size_t _element_size) {
+void BitonicSort(cl_device_id _DEVICE, uint _elements[], size_t _element_size) {
 
     uint _m_stage = log(_element_size) / log(2);
 
@@ -27,7 +27,7 @@ void BitonicSort(cl_device_id _DEVICE, cl_event _event, int _elements[], size_t 
 
     lookup_data_buffer();
 
-    print_data(ELEMENT_ARR, _DEVICE, _element_size);
+    //print_data(ELEMENT_ARR, _DEVICE, _element_size);
 
     //Add kernels to the respective devices
     string kernel_name = KERNEL_BITONIC_SORT;
@@ -48,10 +48,13 @@ void BitonicSort(cl_device_id _DEVICE, cl_event _event, int _elements[], size_t 
         vector<int> param;
         param.push_back(_m_stage);
 
-        execute(_DEVICE, kernel_name, _event, arguments, param, _element_size / 2, _element_size / 2);
+        execute(_DEVICE, kernel_name, evt, arguments, param, _element_size / 2, _element_size / 2);
 
         cout << endl;
         print_data(ELEMENT_ARR, _DEVICE, _element_size);
+
+        // Read from buffer
+        read_data(ELEMENT_ARR, _DEVICE, _elements, _element_size);
     }
     else {
         cout << "Error in reading kernel source file.\n";

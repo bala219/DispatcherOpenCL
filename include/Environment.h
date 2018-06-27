@@ -66,19 +66,20 @@ void print_environment(){
     }
 }
 
-void print_execution_time(cl_event _event) {
+void print_execution_time(cl_event *_event) {
 
+    cout<<"Test1"<<endl;
     cl_ulong time_start;
     cl_ulong time_end;
-
-    //clGetEventProfilingInfo(_event, cpiS, sizeof(time_start), &time_start, NULL);
-    //clGetEventProfilingInfo(_event, cpiE, sizeof(time_end), &time_end, NULL);
-
-    clGetEventProfilingInfo(_event, cpiS, sizeof(time_start), &time_start, NULL);
-    clGetEventProfilingInfo(_event, cpiE, sizeof(time_end), &time_end, NULL);
-
+    cout<<"Test2"<<endl;
+    clGetEventProfilingInfo(*_event, cpiS, sizeof(time_start), &time_start, NULL);
+    clGetEventProfilingInfo(*_event, cpiE, sizeof(time_end), &time_end, NULL);
+    cout<<"Test3"<<endl;
     double nanoSeconds = time_end-time_start;
-    printf("\nOpenCl Execution time is: %0.3f milliseconds \n",nanoSeconds / 1000000.0);
+
+    printf("\nOpenCl Execution time is: %0.3f milliseconds diff \n", (nanoSeconds / 1000000.0));
+    printf("\nOpenCl Execution time is: %0.3f milliseconds start \n", (time_start / 1000000.0));
+    printf("\nOpenCl Execution time is: %0.3f milliseconds end \n", (time_end / 1000000.0));
 }
 
 #endif //OPENCLTEST_ENVIRONMENT_H

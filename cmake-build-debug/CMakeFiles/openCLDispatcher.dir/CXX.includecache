@@ -11,10 +11,12 @@ include/Environment.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/Environment.h
 include/primitives/header/BitonicSorting.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/BitonicSorting.h
-include/primitives/header/Aggregation1.h
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation1.h
+include/primitives/header/Aggregating.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregating.h
 include/primitives/header/Merging.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Merging.h
+include/distribution.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/distribution.h
 
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/Environment.h
 globals.h
@@ -27,6 +29,14 @@ globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
 globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
+
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/distribution.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
 
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 headers.h
@@ -62,7 +72,7 @@ CL/cl.h
 globals.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
 
-/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregation1.h
+/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregating.h
 ../../data_api.h
 /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/data_api.h
 ../../kernel_api.h

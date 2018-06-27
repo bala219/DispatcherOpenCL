@@ -5,10 +5,11 @@ CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../Main.cpp
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/Environment.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/ImportKernelSource.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/data_api.h
+CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/distribution.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/globals.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/headers.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/kernel_api.h
-CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/Aggregation1.h
+CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/Aggregating.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/BitonicSorting.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/Merging.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/runtime_api.h
