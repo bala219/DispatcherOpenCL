@@ -1,37 +1,45 @@
 __kernel void _kernel_bitonic_sort(__global int* _elements, const uint _stages) {
 
-	uint _mId = get_global_id(0);
-    __local int _mLocalArr[ARR_SIZE];
+    uint mIndex1, mIndex2;
+	uint mGlobalId = get_global_id(0);
+    __local int mLocalArr[ARR_SIZE];
+    uint cond = -1;
 
-	_mLocalArr[_mId] = _elements[_mId];
-	_mLocalArr[_mId + ARR_SIZE/2] = _elements[_mId + ARR_SIZE/2];
+	mLocalArr[mGlobalId] = _elements[mGlobalId];
+	mLocalArr[mGlobalId + ARR_SIZE/2] = _elements[mGlobalId + ARR_SIZE/2];
 	barrier(CLK_LOCAL_MEM_FENCE);
 
 	// PHASE 1. Making bitonic sequences
 	for (uint _stage = 1; _stage <= _stages; _stage++) {
 
-		uint _m_signo = (_mId >> (_stage - 1)) & 1;
+		uint _m_signo = (mGlobalId >> (_stage - 1)) & 1;
 		for (uint _passOfStage = _stage; _passOfStage > 0; _passOfStage--) {
 
 			uint _targetElements = 1 << (_passOfStage-1);
 
-			uint _index1 = (_mId >> (_passOfStage-1));
-			_index1 = _index1 << _passOfStage;
-			_index1 = _index1 + (_mId & (_targetElements - 1));
+			uint mIndex1 = (mGlobalId >> (_passOfStage-1));
+			mIndex1 = mIndex1 << _passOfStage;
+			mIndex1 = mIndex1 + (mGlobalId & (_targetElements - 1));
+			//uint mIndex1 = ((mGlobalId >> (_passOfStage-1)) << _passOfStage) + (mGlobalId & (_targetElements - 1));
 
-			uint _index2 = _index1 + _targetElements;
+			uint mIndex2 = mIndex1 + _targetElements;
 
-			if ((_mLocalArr[_index1] > _mLocalArr[_index2]) ^ (_m_signo)) {
-				int aux = _mLocalArr[_index1];
-				_mLocalArr[_index1] = _mLocalArr[_index2];
-				_mLocalArr[_index2] = aux;
+			//printf("\nGLOBAL ID :: %d\tSTAGE :: %d\tPASS :: %d\tSIGNO :: %d\tCONDITION1 :: %d\tCONDITION2 :: %d", mGlobalId, _stage, _passOfStage, (_m_signo), (mLocalArr[mIndex1] > mLocalArr[mIndex2]), (mLocalArr[mIndex1] > mLocalArr[mIndex2]) ^ (_m_signo));
+
+			if ((mLocalArr[mIndex1] > mLocalArr[mIndex2]) ^ (_m_signo)) {
+			    cond = 1;
+				int aux = mLocalArr[mIndex1];
+				mLocalArr[mIndex1] = mLocalArr[mIndex2];
+				mLocalArr[mIndex2] = aux;
 			}
+			//else
+			    //cond = 0;
 
-            //printf("\nSTAGE :: %d\tPASS_OF_STAGE :: %d \t(ID :: %d \tTARGET_ELEMENTS :: %d , \tSIGNO :: %d) \tINDEX1 :: %d \tINDEX2 :: %d \tARRAY[%d] :: %d \t\tARRAY[%d] :: %d", _stage, _passOfStage, _mId, _targetElements, _m_signo, _index1, _index2, _index1, _mLocalArr[_index1], _index2, _mLocalArr[_index2]);
+            //printf("\nLOOP :: %d \tSTAGE :: %d\tPASS_OF_STAGE :: %d \t(ID :: %d \tTARGET_ELEMENTS :: %d , \tSIGNO :: %d) \tINDEX1 :: %d \tINDEX2 :: %d \tARRAY[%d] :: %d \t\tARRAY[%d] :: %d", cond, _stage, _passOfStage, mGlobalId, _targetElements, _m_signo, mIndex1, mIndex2, mIndex1, mLocalArr[mIndex1], mIndex2, mLocalArr[mIndex2]);
 
-			barrier(CLK_LOCAL_MEM_FENCE);
+			//barrier(CLK_LOCAL_MEM_FENCE);
 
-			/*if(_index2 == ARR_SIZE-1) {
+			/*if(mIndex2 == ARR_SIZE-1) {
 	            printf("\n---------------------------------------------------------------------");
 			}
 			if(_passOfStage == 1) {
@@ -39,17 +47,17 @@ __kernel void _kernel_bitonic_sort(__global int* _elements, const uint _stages) 
 			}*/
 		}
 	}
-	_elements[_mId] = _mLocalArr[_mId];
-	_elements[_mId + ARR_SIZE/2] = _mLocalArr[_mId + ARR_SIZE/2];
+	_elements[mGlobalId] = mLocalArr[mGlobalId];
+	_elements[mGlobalId + ARR_SIZE/2] = mLocalArr[mGlobalId + ARR_SIZE/2];
 }
 
 /*__kernel void _kernel_bitonic_sort(__global int* _elements, const uint _stages) {
 
-    unit _mId = get_global_id(0);
-    __local int _mLocalArr[ARR_SIZE];
+    unit mGlobalId = get_global_id(0);
+    __local int mLocalArr[ARR_SIZE];
 
-    _mLocalArr[_mId] = _elements[_mId];
-    _mLocalArr[_mId + ARR_SIZE/2] = _elements[_mId + ARR_SIZE/2];
+    mLocalArr[mGlobalId] = _elements[mGlobalId];
+    mLocalArr[mGlobalId + ARR_SIZE/2] = _elements[mGlobalId + ARR_SIZE/2];
 
     // For Stages
     for(uint _stage = 1; _stage <= _stages; _stages) {

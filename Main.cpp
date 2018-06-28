@@ -11,10 +11,19 @@
 #include "include/distribution.h"
 
 void call_BitonicSort(cl_device_id _DEVICE, uint m_arr[], int m_size);
+
 void call_Merge(cl_device_id _DEVICE);
+
 void call_Aggregation(cl_device_id _DEVICE, uint m_arr[], int m_size);
 
 int main(int argc, char *argv[]) {
+
+    /*int A = 16, B = 9;
+
+    A = B*(A>B) + A*(A<B);
+    B = A*(B>A) + B*(B<A);
+
+    cout << "A :: " << A << "\t B ::" << B;*/
 
     // Generate random numbers
     int m_size = pow(2, 9);
@@ -26,7 +35,7 @@ int main(int argc, char *argv[]) {
 
     // Create an array of _size
     uint m_rand_arr[m_size];
-    for(int i = 0; i < m_size; i++) {
+    for (int i = 0; i < m_size; i++) {
         m_rand_arr[i] = UniformRandom();
     }
 
@@ -34,10 +43,11 @@ int main(int argc, char *argv[]) {
     print_environment();
 
     // Get Device ID
-    cl_device_id CPU, GPU;
+    //cl_device_id CPU, GPU;
+    cl_device_id GPU;
 
-    GPU = device[0][0];
-    //CPU = device[0][1];
+    GPU = device[0][0]; // GPU
+    //GPU = device[0][1]; // CPU
 
 
     // Initialize the events required
@@ -70,16 +80,16 @@ void /*Main::*/call_BitonicSort(cl_device_id _DEVICE, uint m_arr[], int m_size) 
 void /*Main::*/call_Merge(cl_device_id _DEVICE) {
 
     //Creating 2 sorted arrays
-    int _m_size_left=8;
-    int _m_size_right=8;
+    int _m_size_left = 8;
+    int _m_size_right = 8;
 
 
-    int _m_arr_left[_m_size_left]={1,1,2,3,4,4,9,9};
-    int _m_arr_right[_m_size_right]={1,3,5,8,11,12,13,14};
+    int _m_arr_left[_m_size_left] = {1, 1, 2, 3, 4, 4, 9, 9};
+    int _m_arr_right[_m_size_right] = {1, 3, 5, 8, 11, 12, 13, 14};
     int _m_arr_result[_m_size_left];
 
     // Call merge function
-    Merge(_DEVICE,_m_arr_left,_m_arr_right,_m_arr_result,_m_size_left,_m_size_right);
+    Merge(_DEVICE, _m_arr_left, _m_arr_right, _m_arr_result, _m_size_left, _m_size_right);
 }
 
 void /*Main::*/call_Aggregation(cl_device_id _DEVICE, uint m_arr[], int m_size) {

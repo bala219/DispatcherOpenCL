@@ -57,7 +57,7 @@ map<pair<string, cl_device_id>, cl_kernel> kernel_dictionary;
 // CONSTANSTS FOR KERNEL
 //
 
-const uint ITERATOR = 8;
+const uint ITERATOR = 4;
 
 // KERNEL NAMES
 const string KERNEL_BITONIC_SORT = "_kernel_bitonic_sort";

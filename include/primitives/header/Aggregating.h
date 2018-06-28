@@ -59,7 +59,7 @@ void Aggregate(cl_device_id _DEVICE, uint *_sorted_elements, uint _element_size)
         // Pass constant Params
         vector<int> param;
 
-        execute(_DEVICE, kernel_name, evt, arguments, param, _element_size / ITERATOR, ITERATOR);
+        execute(_DEVICE, kernel_name, evt, arguments, param, _element_size, 1);
 
         cout << endl << "res" << endl;
         print_data(RESULTANT_ARR, _DEVICE, _m_unique_count);
