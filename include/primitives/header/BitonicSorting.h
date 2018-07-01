@@ -25,7 +25,7 @@ void BitonicSort(cl_device_id _DEVICE, uint _elements[], size_t _element_size) {
     // Add data to the respective devices
     add_data(ELEMENT_ARR, _elements, _DEVICE, _element_size);
 
-    lookup_data_buffer();
+    //lookup_data_buffer();
 
     //print_data(ELEMENT_ARR, _DEVICE, _element_size);
 
@@ -48,13 +48,16 @@ void BitonicSort(cl_device_id _DEVICE, uint _elements[], size_t _element_size) {
         vector<int> param;
         param.push_back(_m_stage);
 
-        execute(_DEVICE, kernel_name, evt, arguments, param, _element_size / 2, _element_size / 2);
+        execute(_DEVICE, kernel_name, arguments, param, _element_size / 2, _element_size / 2);
 
-        cout << endl;
-        print_data(ELEMENT_ARR, _DEVICE, _element_size);
+        //cout << endl;
+        //print_data(ELEMENT_ARR, _DEVICE, _element_size);
 
         // Read from buffer
         read_data(ELEMENT_ARR, _DEVICE, _elements, _element_size);
+
+        // Clear data from buffer
+        clear_data(_DEVICE, arguments);
     }
     else {
         cout << "Error in reading kernel source file.\n";

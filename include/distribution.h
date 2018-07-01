@@ -14,6 +14,7 @@
 
 int genSize = 1000;
 static int seed = 2;
+int startEle = 0;
 
 /*
 Below functions generate unique numbers:
@@ -64,7 +65,6 @@ void InitDenseUnique() {
 
 int DenseUniqueRandom() {
 
-
     seed = (g * seed) % p;
     while (seed > upperBound) { seed = (g * seed) % p; }
     return seed;
@@ -100,6 +100,19 @@ int SequentialNumbers(int multiplier) {
     return (++i) * multiplier;
 }
 
+void setStartEle(int e) {
+    startEle = e;
+}
+
+int AscendingNumbers() {
+    //static int i = 0;
+    return (startEle++);
+}
+
+int DecendingNumbers() {
+    //static int i = 0;
+    return (--startEle);
+}
 
 /*
  	Below functions generate non-unique numbers
@@ -126,6 +139,10 @@ int Exponential() {
 
 void setGen(int gen) {
     genSize = gen;
+}
+
+void duplicateNumber() {
+
 }
 
 #endif //OPENCLDISPATCHER_DISTRIBUTION_H

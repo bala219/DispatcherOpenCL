@@ -9,6 +9,8 @@ CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/distribution.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/globals.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/headers.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/kernel_api.h
+CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/VariantTest/MergeVariantTest.h
+CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/VariantTest/VariantTesting.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/Aggregating.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/BitonicSorting.h
 CMakeFiles/openCLDispatcher.dir/Main.cpp.o: ../include/primitives/header/Merging.h

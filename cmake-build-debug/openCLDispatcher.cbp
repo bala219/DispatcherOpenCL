@@ -132,6 +132,12 @@
 		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_generator/selection_generator.h">
 			<Option target="openCLDispatcher"/>
 		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/VariantTest/MergeVariantTest.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/VariantTest/VariantTesting.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
 		<Unit filename="/home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregating.h">
 			<Option target="openCLDispatcher"/>
 		</Unit>

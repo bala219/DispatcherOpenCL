@@ -11,6 +11,8 @@
 
 #include "globals.h"
 
+cl_event read_event;
+
 template<typename T>
 void add_data(string alias, T *data, cl_device_id device, size_t size) {
 
@@ -66,6 +68,28 @@ void read_data(string name, cl_device_id device, T *data, size_t size) {
     cl_mem argument_buffer = data_dictionary.find(make_pair(name, device))->second;
 
     err = clEnqueueReadBuffer(queue[device].queue, argument_buffer, CL_TRUE, 0, size * sizeof(T), data, 0, NULL, NULL);
+
+    clFinish(queue[device].queue);
+    clFlush(queue[device].queue);
+    clWaitForEvents(1,&read_event);
+}
+
+void clear_data(cl_device_id device, vector<string> args){
+
+    //clReleaseMemObject
+    for(int i=0;i<args.size();i++){
+
+        cl_mem argument_buffer = data_dictionary.find(make_pair(args[i],device))->second;
+        err |= clReleaseMemObject(argument_buffer);
+        if (err != CL_SUCCESS) {
+            std::cerr << ": Error releasing buffer arguments (" << err
+                      << ")." << std::endl;
+            return;
+        }
+    }
+    data_dictionary.clear();
+    kernel_dictionary.clear();
+
 }
 
 void transfer_data(string name, cl_device_id source, cl_device_id target, size_t size) {

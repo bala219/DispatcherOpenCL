@@ -37,7 +37,11 @@ ADD_EXECUTABLE(openCLDispatcher
         #include/primitives/source/Aggregation.cpp
         include/primitives/header/Aggregation.h
 
-        include/distribution.h)
+        include/distribution.h
+        #include/primitives/VariantTest/AggregateVariantTest.h
+        #include/primitives/VariantTest/BitonicVariantTest.h
+        include/primitives/VariantTest/MergeVariantTest.h
+        include/primitives/VariantTest/VariantTesting.h)
 
 #INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 INCLUDE_DIRECTORIES( ${OpenCL_INCLUDE_DIR} )

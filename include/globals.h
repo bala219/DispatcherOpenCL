@@ -9,12 +9,12 @@
 
 #include "headers.h"
 
-static int count;
+//static int count;
+//cl_event *event;
 
-//cl_event *evt;
+double execution_time_ns;
 
 cl_event evt;
-
 cl_int err;
 
 const cl_command_queue_properties cqp = CL_QUEUE_PROFILING_ENABLE;
@@ -56,9 +56,6 @@ map<pair<string, cl_device_id>, cl_kernel> kernel_dictionary;
 //
 // CONSTANSTS FOR KERNEL
 //
-
-const uint ITERATOR = 4;
-
 // KERNEL NAMES
 const string KERNEL_BITONIC_SORT = "_kernel_bitonic_sort";
 const string KERNEL_MERGE = "_kernel_merge";
@@ -72,6 +69,10 @@ const string ELEMENT_ARR = "element_arr";
 const string INDEX_ARR = "index_arr";
 const string OFFSET_ARR = "offset_arr";
 const string RESULTANT_ARR = "resultant_arr";
+const string LEFT_ARR = "left_arr";
+const string RIGHT_ARR = "right_arr";
+
+
 
 const string BIT_MASKED = "bit_masked";
 const string PREFIX_SUM = "prefix_sum";

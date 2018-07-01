@@ -10,6 +10,8 @@ CMakeFiles/openCLDispatcher.dir/Main.cpp.o
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/globals.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/headers.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/kernel_api.h
+ /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/VariantTest/MergeVariantTest.h
+ /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/VariantTest/VariantTesting.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Aggregating.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/BitonicSorting.h
  /home/tompi/MY_WORK_ZONE/Workspace/GitHubProject/DispatcherOpenCL/include/primitives/header/Merging.h
