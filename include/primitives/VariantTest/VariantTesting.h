@@ -430,7 +430,7 @@ void agg_evaluation(int _loop) {
                         setGen(m_size);
                         // Create an array of _size
                         uint m_rand_arr[m_size];
-                        uint p_ele = m_size * (m/100);
+                        uint p_ele = (m_size * m) / 100;
                         for (int k = 0; k < m_size; k++) {
                             m_rand_arr[k] = (p_ele + k >= m_size - 1) ? k+1 : m_size;
                         }

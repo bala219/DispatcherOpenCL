@@ -19,10 +19,8 @@ int main(int argc, char *argv[]) {
 
     bs_evaluation(9); // loop for executing the bitonic sort in
     evaluate_Merge(15,256,5); //(Power of max element size allowed, max_work_group_size, loop_size)
-
+    agg_evaluation(4);
     //call();
-    //agg_evaluation(4);
-
 
     return 0;
 }
