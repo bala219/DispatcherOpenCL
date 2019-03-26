@@ -1,3 +1,6 @@
+# Credits
+Due credits are given to TUM team for the tectorwise and typer paradigms
+
 # required Libraries
 -TBB
 
