@@ -1,0 +1,16 @@
+/home/gurumurt/clion-2017.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms
+CMake Error: The current CMakeCache.txt directory /home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms/googletest-download/CMakeCache.txt is different than the directory /home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The current CMakeCache.txt directory /home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms/googletest-download/CMakeCache.txt is different than the directory /home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source directory "/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+Makefile:146: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1
+-- setting datadir to proj dir 
+-- /home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms/data
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   chrono
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms
