@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/CMakeFiles/googletest
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/CMakeFiles/googletest.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/CMakeFiles/googletest-complete.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+/home/gurumurt/Phd/SQL flow/db-engine-paradigms/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule
