@@ -1,4 +1,4 @@
-# Install script for directory: /home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms
+# Install script for directory: /home/gurumurt/DBPV/Dispatcher/openCLDispatcher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,11 +32,9 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms/googletest-build/cmake_install.cmake")
-  include("/home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms/3rdparty/jevents/cmake_install.cmake")
-
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -47,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gurumurt/Phd/HeroDB/SQL_flow/db-engine-paradigms/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

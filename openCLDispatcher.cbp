@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="openCLDispatcher"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="openCLDispatcher">
+				<Option output="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/openCLDispatcher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 openCLDispatcher"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="openCLDispatcher/fast">
+				<Option output="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/openCLDispatcher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 openCLDispatcher/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/BitonicSorting.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/FluidiCL.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/Query6.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/componentModel.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/cuttlefish.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/damon.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/grouped_aggregate_dual.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/hashing_test.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Bandits/BanditEnvironment.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Bandits/VowpalEnvironment.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Bandits/agents.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Bandits/bandit.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Bandits/policy.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Environment.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/Importkernel.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/base_kernel.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/boostGraphs.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/Compat.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/Util.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/algebra/Operators.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/algebra/Operators.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/algebra/Pipeline.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/algebra/Pipeline.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/algebra/Types.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/algebra/Types.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/defs.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Barrier.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Concurrency.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Concurrency.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Database.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Database.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Hash.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Hashmap.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Hashmap.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Import.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Import.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Memory.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/MemoryPool.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/MemoryPool.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Mmap.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/PartitionedDeque.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Profile.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Query.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/SIMD.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Stack.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/String.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/String.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Types.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Types.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/common/runtime/Util.hpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/data_api.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/globals.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/graph_api.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/headers.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/kernelGraphs.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/kernelTestGraph.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/kernel_api.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/kernel_files/logical_block.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/kernel_files/selection_block.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/kernel_files/selection_coalesced.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/pipeline.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/pipeline/nodeInfo.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/pipeline/pipeline_api.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/primitives/primitiveKernel.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/include/runtime_api.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/main.cpp">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/operator/AggregatebenchMark.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/operator/OA_graph.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/operator/aggregateTests.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/operator/evaluate_atomics.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/operator/operator.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/operator/selection.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/prefixSumCompute.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/testBandits.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/test_local.h">
+			<Option target="openCLDispatcher"/>
+		</Unit>
+		<Unit filename="/home/gurumurt/DBPV/Dispatcher/openCLDispatcher/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
