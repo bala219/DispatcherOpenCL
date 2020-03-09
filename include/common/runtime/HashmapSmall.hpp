@@ -1,6 +1,6 @@
 #pragma once
-#include "common/defs.hpp"
-#include "vectorwise/defs.hpp"
+#include "../defs.hpp"
+#include "../defs.hpp"
 #include <algorithm>
 #include <cassert>
 #include <cstdint>
@@ -13,7 +13,7 @@ template <typename K, typename V>
 class HashmapSmall
 /// a hashmap for at most 2^16 elements, using a memory pool for allocations
 {
-   using ref = vectorwise::pos_t;
+   using ref = int;
    using hash_t = defs::hash_t;
    static const ref empty = std::numeric_limits<ref>::max();
    static constexpr double loadFactor = 0.7;

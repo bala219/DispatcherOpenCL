@@ -1,6 +1,6 @@
 #pragma once
 #include "Util.hpp"
-#include "common/Compat.hpp"
+#include "../Compat.hpp"
 #include <atomic>
 #include <functional>
 #include <new>

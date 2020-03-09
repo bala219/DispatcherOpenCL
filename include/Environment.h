@@ -11,11 +11,22 @@
 #include "headers.h"
 #include "globals.h"
 
+void pfn_notify(const char *errinfo, const void *private_info, size_t cb, void *user_data)
+{
+    cout<<"Here is error info : "<< errinfo<<endl;
+    fprintf(stderr, "OpenCL Error (via pfn_notify): %s\n", errinfo);
+}
 
 void setup_environment(){
 
     //Get the platforms
     err = clGetPlatformIDs(0,NULL,&platform_count);
+    if(err != CL_SUCCESS){
+
+        cerr<<"Error in platform creation"<<endl;
+        cout<<"Error in platform creation"<<endl;
+        exit(0);
+    }
     platform = (cl_platform_id *)malloc(sizeof(cl_platform_id) * platform_count);
 
     context = (cl_context*)malloc(sizeof(cl_context)*platform_count);
@@ -28,17 +39,31 @@ void setup_environment(){
     for(int i =0;i<platform_count;i++){
 
         //Creating context
-
         //Getting the number of devices in the current platform
 
         clGetDeviceIDs(platform[i],CL_DEVICE_TYPE_ALL,NULL,NULL,&device_local_count[i]);
-
         //Getting the devices
         device[i] = new cl_device_id[device_local_count[i]];
-        clGetDeviceIDs(platform[i],CL_DEVICE_TYPE_ALL,device_local_count[i],device[i],NULL);
-
+        err |= clGetDeviceIDs(platform[i],CL_DEVICE_TYPE_ALL,device_local_count[i],device[i],NULL);
         //Creating context for single platform
-        context[i] = clCreateContext(NULL,device_local_count[i],device[i],NULL,NULL,&err);
+        err=0;
+
+        cl_context_properties clp[]={
+                CL_CONTEXT_PLATFORM,
+                (cl_context_properties)platform[i],
+                0
+        };
+
+        context[i] = clCreateContext(clp,device_local_count[i],device[i],NULL,NULL,&err);
+
+        if(err != CL_SUCCESS){
+
+            cerr<<"Context creation error of device: "<< i
+                                                << "  - error : "<< err <<endl;
+
+            cout<<"Context creation error of device: "<< i
+                                                << "  - error : "<< err <<endl;
+        }
 
         //Command queue for each devices
         for(int j=0;j<device_local_count[i];j++){
@@ -51,6 +76,9 @@ void setup_environment(){
             queue.insert(make_pair(device[i][j],dq));
         }
     }
+
+    evt = new cl_event[100];
+
 }
 
 void print_environment(){

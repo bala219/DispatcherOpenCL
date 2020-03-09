@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <memory>
-#include "common/runtime/Database.hpp"
+#include "../runtime/Database.hpp"
 
 
 namespace algebra {

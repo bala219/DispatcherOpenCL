@@ -25,6 +25,14 @@
 #include <CL/cl.h>
 #endif
 
+#include <boost/graph/breadth_first_search.hpp>
+#include <boost/graph/graph_traits.hpp>
+#include <boost/graph/properties.hpp>
+#include <boost/pending/indirect_cmp.hpp>
+#include <boost/range/irange.hpp>
+#include <boost/graph/adjacency_list.hpp>
+#include <boost/graph/topological_sort.hpp>
+
 enum RETURN_TYPE {
     INT,
     FLOAT,
@@ -33,3 +41,4 @@ enum RETURN_TYPE {
 };
 
 using namespace std;
+//using namespace cl;

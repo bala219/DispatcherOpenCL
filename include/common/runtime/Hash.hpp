@@ -1,9 +1,9 @@
 #pragma once
-#include "common/Compat.hpp"
-#include "common/Util.hpp"
-#include "common/defs.hpp"
-#include "common/runtime/SIMD.hpp"
-#include "common/runtime/Types.hpp"
+#include "../Compat.hpp"
+#include "../Util.hpp"
+#include "../defs.hpp"
+#include "SIMD.hpp"
+#include "Types.hpp"
 #include <x86intrin.h>
 
 namespace runtime {

@@ -1,8 +1,8 @@
 #pragma once
-#include "common/algebra/Types.hpp"
-#include "common/runtime/MemoryPool.hpp"
-#include "common/runtime/Mmap.hpp"
-#include "common/runtime/Util.hpp"
+#include "../algebra/Types.hpp"
+#include "MemoryPool.hpp"
+#include "Mmap.hpp"
+#include "Util.hpp"
 #include <deque>
 #include <exception>
 #include <memory>

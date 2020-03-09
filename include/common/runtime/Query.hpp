@@ -1,5 +1,5 @@
 #pragma once
-#include "common/runtime/MemoryPool.hpp"
+#include "MemoryPool.hpp"
 #include <memory>
 
 namespace runtime {

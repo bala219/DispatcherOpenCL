@@ -1,8 +1,7 @@
 #pragma once
 #include "Barrier.hpp"
-#include "common/Compat.hpp"
-#include "common/runtime/Barrier.hpp"
-#include "common/runtime/MemoryPool.hpp"
+#include "../Compat.hpp"
+#include "MemoryPool.hpp"
 #include "tbb/task_group.h"
 #include <deque>
 #include <functional>

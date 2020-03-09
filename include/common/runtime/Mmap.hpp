@@ -1,5 +1,5 @@
 #pragma once
-#include "common/Compat.hpp"
+#include "../Compat.hpp"
 #include <cassert>
 #include <cstring>
 #include <experimental/string_view>

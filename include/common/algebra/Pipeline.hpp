@@ -1,5 +1,5 @@
 #pragma once
-#include "common/algebra/Operators.hpp"
+#include "Operators.hpp"
 #include <ostream>
 
 

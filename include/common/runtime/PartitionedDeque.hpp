@@ -1,7 +1,7 @@
-#include "common/defs.hpp"
-#include "common/runtime/Concurrency.hpp"
-#include "common/runtime/MemoryPool.hpp"
-#include "common/runtime/Util.hpp"
+#include "../defs.hpp"
+#include "Concurrency.hpp"
+#include "MemoryPool.hpp"
+#include "Util.hpp"
 #include <assert.h>
 #include <cstdlib>
 #include <cstring>

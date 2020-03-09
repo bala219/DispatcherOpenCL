@@ -1,6 +1,6 @@
 #pragma once
-#include "common/runtime/Concurrency.hpp"
-#include "common/runtime/Util.hpp"
+#include "Concurrency.hpp"
+#include "Util.hpp"
 #include <cstddef>
 #include <new>
 

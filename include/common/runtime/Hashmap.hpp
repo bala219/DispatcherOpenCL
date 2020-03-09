@@ -1,8 +1,8 @@
 #pragma once
-#include "common/defs.hpp"
-#include "common/runtime/Memory.hpp"
-#include "common/runtime/SIMD.hpp"
-#include "common/runtime/Stack.hpp"
+#include "../defs.hpp"
+#include "Memory.hpp"
+#include "SIMD.hpp"
+#include "Stack.hpp"
 #include <assert.h>
 #include <atomic>
 #include <cassert>
