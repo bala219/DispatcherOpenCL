@@ -117,7 +117,7 @@ void prepare_input(short type=0, size_t size = 1024, size_t inter=8, double lamb
         case 1: std::generate_n(agg_input,data_size,UniqueNumber);
                 break;
 
-        //generating ordered - equal interval
+        //geneing ordered - equal interval
         case 2: repeat=0;
                 interval = inter;
                 std::generate_n(agg_input,data_size,EqualInterval);
@@ -357,12 +357,17 @@ string Kernels[9] = {"branched_aggregate",                          //0
                      "private_array_sequential_aggregate",          //2
                      "private_array_sequential_aggregate_local",    //3
                      "atomic_local_aggregate_ordered",              //4
-                     "atomic_aggregate"                             //5
-                      };
+                     "atomic_aggregate",                            //5
+                     "fifo_unordered",                              //Test 1
+                     "two_set_associative_unordered"               //Test 2
+
+};
 
 
 string unordered_Kernels[9] = {	"atomic_aggregate",                            //0
-                     			"direct_mapped_unordered",              	   //1
+                     			"direct_mapped_unordered",                     //1
+                     			//"fifo_unordered",                              //Test 1
+                     			//"two_set_associative_unordered",               //Test 2
                      			"direct_mapped_unordered_local",               //2
                      			"branched_aggregate",                          //3
                      			"branched_aggregate_ordered",                  //4
@@ -385,14 +390,15 @@ void test_atomic_operation( short kernel_ID,
     size_t IteratorSize = 8; //local size of 2¹⁰ can have maximum of 16 values in ITERATOR
 
     if(kernel_ID != 4 && kernel_ID != 5 ) //These are atomic aggregates that is done individually for each threads
-        data_size /=IteratorSize;
+        data_size /=IteratorSize; //data_size is divided by iteratorsize i.e; 2^25 / 8
 
-    localSize = localSize>data_size?data_size:localSize;
+    localSize = localSize>data_size?data_size:localSize; // condition ? result1 : result2
     //Max local memory size : 16384
     //Compile kernel
     stringstream sStream;
     sStream << " -DDATA_SIZE=" << d_size << " -DLOCAL_DATA_SIZE=" << localSize << " -DOFFSET_SIZE=" << data_size  / IteratorSize << " -DITERATOR=" << IteratorSize<<" -DLOCAL_SPACE=" << IteratorSize/2;
     string kern = Kernels[kernel_ID]; //unordered_Kernels
+    //string kern = unordered_Kernels[kernel_ID];
     string kernelSource = "operator/testKernels/"+ kern +".cl";
     string src = readKernelFile(kernelSource);
     add_kernel(kern,d,src,sStream.str());
@@ -409,9 +415,9 @@ void test_atomic_operation( short kernel_ID,
 
 //    size_t iteration_size = 1;
     double execution_time = 0;
+
     for(int i = 0; i <=iteration_size; i++){
         execute(d,kern,data_array,param,data_size,localSize);//localSize
-
         if(i)
             execution_time += nanoSeconds;
     }
@@ -421,6 +427,9 @@ void test_atomic_operation( short kernel_ID,
     delete_data("res",d);
 
     cout<<r[0]<<"\t"; //*1000000000
+    //cout<<execution_time
+    //cout<<execution_time_ns
+    //cout<<execution_time/(iteration_size)
     cout<<(double)execution_time/(iteration_size)
 //    <<endl; //*1000000000
     <<"\t"; //*1000000000

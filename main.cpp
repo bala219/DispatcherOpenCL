@@ -124,76 +124,61 @@ void testVariants();
 
 int main(int argc, char* argv[]) {
 
+//argc means number of arguments whereas argv is argument itself
 //    std::ofstream output("error.txt");
 //    std::streambuf* p_cerrbuffer=std::cerr.rdbuf();
 //    std::cerr.rdbuf(output.rdbuf()); // redirecting to a file
-
     setup_environment();
+    //print_environment();
 
     //Testing TPCH with barrier atomics
-    TPCHqueriesTest();
+    //TPCHqueriesTest();
 
 
     short p = 10;
-    short dev_id = 1;
+    short dev_id = 0;
     size_t ds = pow(2,p);
 
     short option =  argc<2?1:std::stoi(argv[1]);
-
+    //cout<<option;
     short end_dis = 8; //8
     short dataDis = 0; //0
     short start_v = 0;
-    short end_v = 5; //5
+    short end_v = 8; //5
 
     if(option == 2){
 
         end_dis = 14;
         dataDis = 9;
-        start_v=5;
-        end_v = 6;
+        start_v=0;
+        end_v = 5;
     }
+    //executeGraph(reinterpret_cast<cl_device_id>(dev_id));
     start_v=5;
-    end_v=5;
+    end_v=7;
     dataDis=0;
-    end_dis= 8;
+    end_dis= 10;
+    //cout<<argv[0];
+    //cout<<argc;
     cout<<"Data distribution\tData Size\tkernel name\tresult size\tresult\ttime\tbaseline"<<endl;
     for(;dataDis <= end_dis;dataDis++) {// 0 -- 8 => ORDERED | 9 -- 14 => UNORDERED
-        for (short p = 28; p <= 28; p++) {
+        for (short p = 10; p <= 11; p++) {
             ds = pow(2, p);
-            prepare_input(dataDis, ds, pow(2,p-2));
+            //prepare_input(dataDis, ds, pow(2,p-2));
+            prepare_input();
             for (short v = start_v; v <= end_v; v++) { //6
                 cout
                         << dataDis
                         << "\t"
                         << ds
                         << "\t";
-//                test_atomic_operation(v, dev_id, dataDis, ds);
-                if(v==0 || v==5)
-                    test_barrier_reduce(dev_id, dataDis, ds);
-                else
-                    cout<<"0"<<endl;
+               test_atomic_operation(v, dev_id, dataDis, ds);
+                //if(v==0 || v==5)
+                    //test_barrier_reduce(dev_id, dataDis, ds);
+                //else
+                   cout<<"0"<<endl;
             }
         }
     }
 
-    //Testing equal interval distribution
-    start_v=1;
-    end_v=1;
-    dataDis=2;
-    cout<<"Data distribution\tInteval\tkernel name\tresult size\tresult\ttime\tbaseline"<<endl;
-    p = 28;
-    ds = pow(2, p);
-    for (short interv = 0;interv<10;++interv) {
-
-    prepare_input(dataDis, ds, interv);
-    for (short v = start_v; v <= end_v; v++) { //6
-            cout
-                    << dataDis
-                    << "\t"
-                    << interval
-                    << "\t";
-            test_atomic_operation(v, dev_id, dataDis, ds);
-            cout<<"0"<<endl;
-        }
-    }
 }
